@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">Rohith</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <div class="logo">Rohith Chikkala</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Rohith profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rohith Chikkala</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <p class="section__text__p2">Project Manager</p>
+
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rohith-chikkala/'" />
+          <img src="./assets/github.png" alt="GitHub" class="icon"
+            onclick="location.href='https://github.com/rohith5005/Rohith'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container">
+        <div class="about-details-container">
+
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />Software Development</p>
+            </div>
+
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>
+                B.Tech Electrical Engineering (IIT Madras)<br />
+                M.Sc. Electrical Engineering (IIT Madras)<br />
+                M.Sc. Engineering Management (UMBC)
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              Software Engineer with 2+ years of experience building scalable backend systems, APIs, and automation frameworks
+              using Python, Golang, and SQL. Strong foundation in machine learning, data science, and distributed systems, reinforced
+              by engineering management training at UMBC. Experienced working in Agile environments and passionate about
+              designing robust, scalable architectures and delivering customer-centric solutions.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <!-- EXPERIENCE SECTION (UPDATED!) -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!-- ================= LANGUAGES ================= -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3><p>Advanced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SQL (PostgreSQL)</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>R</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C / C++</h3><p>Basic</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Golang</h3><p>Basic</p></div></article>
+
+            </div>
+          </div>
+
+          <!-- ================= PROJECT MANAGEMENT ================= -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Project Management Tools</h2>
+            <div class="article-container">
+
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>MS Project</h3><p>Proficient</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Jira</h3><p>Proficient</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Asana</h3><p>Proficient</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>WBS</h3><p>Experienced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PMP Certification</h3><p>Pursuing</p></div></article>
+
+            </div>
+          </div>
+
+          <!-- ================= DEVOPS & TOOLS ================= -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps & Technologies</h2>
+            <div class="article-container">
+
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Splunk</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Jenkins</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Postman</h3><p>Experienced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>gRPC</h3><p>Basic</p></div></article>
+
+            </div>
+          </div>
+
+          <!-- ================= PROJECT & FINANCIAL MGMT ================= -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Project & Financial Management</h2>
+            <div class="article-container">
+
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Cost Control</h3><p>Experienced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Risk Analysis</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Supply Chain Logistics</h3><p>Intermediate</p></div></article>
+
+            </div>
+          </div>
+
+          <!-- ================= DEVELOPMENT EXPERIENCE ================= -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Development Experience</h2>
+            <div class="article-container">
+
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>API Integration</h3><p>Experienced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Test Automation</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Web Scraping (FastAPI)</h3><p>Intermediate</p></div></article>
+
+            </div>
+          </div>
+
+          <!-- ================= FRONTEND ================= -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>HTML</h3><p>Experienced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>CSS</h3><p>Experienced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SASS</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p>Basic</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>TypeScript</h3><p>Basic</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Material UI</h3><p>Intermediate</p></div></article>
+
+            </div>
+          </div>
+
+          <!-- ================= BACKEND ================= -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PostgreSQL</h3><p>Basic</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Node.js</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Express.js</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Git</h3><p>Intermediate</p></div></article>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Personal Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="project-title">Tele-health</h2>
+            <p class="project-description">
+  A remote healthcare consultation platform enabling patients to book virtual
+  appointments, securely share medical records, and communicate with doctors in
+  real time. Built with a focus on accessibility, security, and scalable backend
+  architecture.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="project-title">Grocery-mitra</h2>
+            <p class="project-description">
+    A smart grocery management and shopping assistant designed to help users
+    automate grocery lists, track stock levels, compare store prices, and reduce
+    food waste through AI-driven reminders and recommendations.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn">Github</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" class="icon contact-icon" />
+          <p><a href="mailto:examplemail@gmail.com">Rohithchikkala5@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/rohith-chikkala/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2023 Rohith Chikkala. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
